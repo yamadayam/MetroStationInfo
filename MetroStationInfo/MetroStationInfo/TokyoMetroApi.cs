@@ -31,7 +31,6 @@ namespace MetroStationInfo
                 string.Join("&", parm.Select(p => string.Format("{0}={1}", p.Key, p.Value))));
 
             // JSON-DLを取得する
-            
             var client = new WebClient()
             {
                 Encoding = System.Text.Encoding.UTF8
